@@ -1,0 +1,124 @@
+/* 
+ * Spacing Adjustments CSS
+ * This file contains adjustments to spacing issues identified in the original design
+ */
+
+/* Hero section spacing improvements */
+.hero {
+  /* Increase the minimum height of the hero section to create more vertical space */
+  min-height: 900px;
+  /* Add more space to the top and bottom with padding */
+  padding: 50px 0 100px;
+}
+
+.hero-content {
+  /* Increase padding at the top to add more space above the hero title */
+  padding-top: 220px;
+}
+
+.hero-title {
+  /* Add more spacing below the title */
+  margin-bottom: 40px;
+}
+
+.hero-description {
+  /* Increase margin below the description before buttons */
+  margin-bottom: 60px;
+}
+
+/* Hero buttons spacing improvements */
+.hero-buttons {
+  /* Add more spacing around buttons */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* Increase gap between buttons */
+  gap: 30px;
+}
+
+.hero-buttons .btn {
+  /* Make buttons slightly larger and more spaced */
+  padding: 18px 38px;
+}
+
+/* Add more vertical space to the section divider to improve flow */
+.section-divider {
+  margin-top: -2px;
+  padding-bottom: 20px;
+}
+
+/* Contact item spacing improvements */
+.contact-item {
+  /* Increase vertical spacing between contact items */
+  margin-bottom: 50px;
+  /* Add horizontal padding */
+  padding: 15px 10px;
+}
+
+.contact-icon {
+  /* Increase the spacing between icon and text */
+  margin-right: 35px;
+}
+
+.contact-text {
+  /* Add some padding to the text content */
+  padding: 5px 0;
+}
+
+.contact-text h3 {
+  /* Increase spacing below heading */
+  margin-bottom: 15px;
+}
+
+/* Social links spacing */
+.social-links {
+  /* Add more spacing between social icons */
+  gap: 25px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero {
+    min-height: 800px;
+    padding: 40px 0 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 750px;
+    padding: 30px 0 60px;
+  }
+  
+  .hero-content {
+    padding-top: 180px;
+  }
+  
+  .hero-buttons {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-item {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    min-height: 700px;
+    padding: 20px 0 50px;
+  }
+  
+  .hero-content {
+    padding-top: 160px;
+  }
+  
+  .hero-buttons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-item {
+    margin-bottom: 35px;
+  }
+} 
