@@ -46,17 +46,32 @@
   padding-bottom: 20px;
 }
 
+/* Contact section improvements */
+.contact-content {
+  gap: 60px;
+  align-items: flex-start;
+}
+
 /* Contact item spacing improvements */
 .contact-item {
   /* Increase vertical spacing between contact items */
   margin-bottom: 50px;
   /* Add horizontal padding */
   padding: 15px 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
 }
 
 .contact-icon {
   /* Increase the spacing between icon and text */
   margin-right: 35px;
+  width: 70px;
+  height: 70px;
 }
 
 .contact-text {
@@ -67,9 +82,48 @@
 .contact-text h3 {
   /* Increase spacing below heading */
   margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.contact-text p {
+  font-size: 1.05rem;
+}
+
+/* Contact form improvements */
+.contact-form {
+  padding: 35px;
+  border-radius: 15px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.form-submit {
+  margin-top: 35px;
 }
 
 /* Social links spacing */
+.contact-social {
+  margin-top: 20px;
+}
+
+.contact-social h3 {
+  margin-bottom: 20px;
+}
+
 .social-links {
   /* Add more spacing between social icons */
   gap: 25px;
@@ -80,6 +134,14 @@
   .hero {
     min-height: 800px;
     padding: 40px 0 80px;
+  }
+  
+  .contact-content {
+    gap: 40px;
+  }
+  
+  .contact-form {
+    padding: 30px;
   }
 }
 
@@ -98,8 +160,42 @@
     margin-bottom: 40px;
   }
   
+  .contact-content {
+    flex-direction: column;
+  }
+  
+  .contact-info, .contact-form {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+  
   .contact-item {
     margin-bottom: 40px;
+    padding: 12px 8px;
+  }
+  
+  .contact-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+  }
+  
+  .contact-text h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-text p {
+    font-size: 1rem;
+  }
+  
+  .contact-form {
+    padding: 25px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
   }
 }
 
@@ -120,5 +216,42 @@
   
   .contact-item {
     margin-bottom: 35px;
+    display: block;
+    text-align: center;
+  }
+  
+  .contact-icon {
+    margin: 0 auto 15px;
+  }
+  
+  .contact-text {
+    padding: 0;
+  }
+  
+  .contact-form {
+    padding: 20px;
+  }
+  
+  .form-group label {
+    font-size: 0.95rem;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+  
+  .form-submit {
+    margin-top: 25px;
+  }
+  
+  .contact-social {
+    text-align: center;
+  }
+  
+  .social-links {
+    justify-content: center;
   }
 } 

@@ -1,0 +1,208 @@
+/* 
+ * CEO Message Enhancement CSS
+ * This file contains improvements to the CEO message section for better readability
+ */
+
+/* General improvements to CEO message section */
+.ceo-message {
+  background-color: #fcfcfc;
+}
+
+.ceo-grid {
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) minmax(300px, 2fr);
+  gap: 50px;
+  align-items: start;
+}
+
+/* Photo styling */
+.ceo-image-container {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.ceo-image-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* Text styling enhancements */
+.ceo-message-text {
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+.ceo-message-text p {
+  margin-bottom: 20px;
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
+.ceo-message-text p:first-of-type {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  border-bottom: 1px solid rgba(106, 17, 203, 0.2);
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.ceo-message-text p:nth-of-type(2) {
+  font-size: 1.1rem;
+}
+
+.ceo-message-text p strong {
+  color: var(--primary-color);
+}
+
+.ceo-message-text .highlight {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.ceo-message-text .emphasis {
+  font-weight: 500;
+}
+
+.ceo-message-text .mirage-text {
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+}
+
+.ceo-message-text .vision-quote {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+/* Service list styling */
+.ceo-message-text ol {
+  margin: 25px 0 30px 25px;
+  counter-reset: service-counter;
+  padding-left: 0;
+}
+
+.ceo-message-text ol li {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 35px;
+  counter-increment: service-counter;
+}
+
+.ceo-message-text ol li:before {
+  content: counter(service-counter);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.ceo-message-text ol li strong {
+  display: block;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+/* CEO signature styling */
+.ceo-signature {
+  text-align: right;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(106, 17, 203, 0.2);
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .ceo-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .ceo-photo {
+    text-align: center;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .ceo-message-text p {
+    font-size: 1rem;
+  }
+  
+  .ceo-message-text p:first-of-type {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ceo-message {
+    padding: 100px 0;
+  }
+  
+  .ceo-photo {
+    max-width: 300px;
+  }
+  
+  .ceo-message-text {
+    padding: 20px;
+  }
+  
+  .ceo-message-text p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+  
+  .ceo-message-text p:first-of-type {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .ceo-message-text ol {
+    margin: 20px 0 25px 15px;
+  }
+  
+  .ceo-message-text ol li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+  }
+  
+  .ceo-message-text ol li strong {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .ceo-photo {
+    max-width: 250px;
+  }
+  
+  .ceo-message-text p, 
+  .ceo-message-text ol li {
+    font-size: 0.9rem;
+  }
+  
+  .ceo-signature {
+    font-size: 1rem;
+    margin-top: 25px;
+    padding-top: 15px;
+  }
+} 
