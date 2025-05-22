@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社Mirage Design | AI×ウェディング 次世代デザインソリューション</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/service-backgrounds.css">
+    <link rel="stylesheet" href="css/service-enhancements.css">
+    <link rel="stylesheet" href="css/hero-enhancement.css">
+    <link rel="stylesheet" href="css/visual-effects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/mirage-logo-refined.svg" alt="Mirage Design Logo" class="logo-img">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#about">会社概要</a></li>
+                        <li class="nav-item"><a href="#services">サービス</a></li>
+                        <li class="nav-item"><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section class="hero">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">蜃気楼のように<span class="gradient-text">境界を超える</span><br>次世代デザインの創造</h2>
+            <p class="hero-subtitle">株式会社Mirage Designは、AIとアートの融合で<br>ビジネスと人生の特別な瞬間に革新をもたらします</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary shine-effect">お問い合わせ</a>
+                <a href="#services" class="btn btn-secondary">サービスを見る</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles-js"></div>
+    </section>
+
+    <div class="section-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path d="M0,192L48,176C96,160,192,128,288,138.7C384,149,480,203,576,218.7C672,235,768,213,864,181.3C960,149,1056,107,1152,106.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- 会社概要 -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title enhanced-title">会社概要</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h3>AIとアートの融合で、<span class="gradient-text">未来を形作る</span></h3>
+                    <p>株式会社Mirage Designは、2025年の設立以来、テクノロジーとアートの境界を超えるソリューションを提供してきました。私たちは単なるサービス提供者ではなく、お客様のビジョンを実現するパートナーとして、革新的なアプローチでビジネスと人生の特別な瞬間に新たな価値を創造します。</p>
+                    <p>長野を拠点に、AI技術を活用した業務自動化ソリューションと、洗練されたウェディング＆PR撮影サービスという異なる2つの分野で、常に最高品質のサービスを追求しています。</p>
+                    <table class="about-table effect-card hover-3d">
+                        <tr>
+                            <th>会社名</th>
+                            <td>株式会社Mirage Design</td>
+                        </tr>
+                        <tr>
+                            <th>設立</th>
+                            <td>2025年4月</td>
+                        </tr>
+                        <tr>
+                            <th>代表取締役</th>
+                            <td>柄澤 広昂</td>
+                        </tr>
+                        <tr>
+                            <th>所在地</th>
+                            <td>〒381-0051 長野県長野市若槻団地4番地43</td>
+                        </tr>
+                        <tr>
+                            <th>事業内容</th>
+                            <td>AI×業務自動化ソリューション、ウェディング＆PR撮影サービス、SEOライティング・運用支援</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider dark">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,101.3C672,85,768,139,864,144C960,149,1056,107,1152,112C1248,117,1344,171,1392,197.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- サービス -->
+    <section id="services" class="services section">
+        <div class="container">
+            <h2 class="section-title enhanced-title">サービス</h2>
+            <p class="section-description">テクノロジーとアートの融合による、<br><span class="gradient-text">次世代のソリューション</span>を提供します。</p>
+            <div class="services-grid">
+                <div class="service-card effect-card slide-in-left">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="service-title">AI×業務自動化ソリューション</h3>
+                    <p class="service-description">LINE・Slack連携型チャットボット構築サービスを提供します。AIを活用した業務自動化で、お客様のビジネスプロセスを効率化し、生産性を向上させます。カスタマイズ可能なソリューションで、様々な業種・業態のニーズに対応します。</p>
+                </div>
+                <div class="service-card effect-card fade-in" data-modal-trigger="service1-modal">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="service-title">ウェディング＆PR撮影サービス</h3>
+                    <p class="service-description">写真・映像撮影をまとめてお任せいただけます。人生の特別な瞬間や企業のブランドイメージを、洗練された美しい映像で残します。最新の撮影技術と独自の美的センスで、心に残る作品を創り出します。</p>
+                </div>
+                <div class="service-card effect-card slide-in-right" data-modal-trigger="service3-modal">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3 class="service-title">SEOライティング・運用支援</h3>
+                    <p class="service-description">検索エンジン最適化に特化した記事制作と運用サポートを提供します。ユーザーと検索エンジンの両方に評価される高品質なコンテンツで、オーガニックトラフィックを増加させ、ブランドの可視性を高めます。長期的な成果を見据えたSEO戦略をサポートします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path d="M0,256L48,266.7C96,277,192,299,288,282.7C384,267,480,213,576,197.3C672,181,768,203,864,218.7C960,235,1056,245,1152,229.3C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- お問い合わせ -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title enhanced-title">お問い合わせ</h2>
+            <p class="section-description">プロジェクトのご相談や、サービスに関するお問い合わせなど、<br>お気軽にご連絡ください。</p>
+            <div class="contact-content">
+                <div class="contact-info slide-in-left">
+                    <div class="contact-item effect-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>所在地</h3>
+                            <p>〒381-0051<br>長野県長野市若槻団地4番地43</p>
+                        </div>
+                    </div>
+                    <div class="contact-item effect-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>電話番号</h3>
+                            <p>070-4386-5248</p>
+                        </div>
+                    </div>
+                    <div class="contact-item effect-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>メールアドレス</h3>
+                            <p>h.karasawa@miragidesign.jp</p>
+                        </div>
+                    </div>
+                    <div class="contact-social effect-card">
+                        <h3>ソーシャルメディア</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link shine-effect"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link shine-effect"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link shine-effect"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link shine-effect"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form blur-bg slide-in-right">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">お名前<span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">会社名</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス<span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">電話番号</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="inquiry">お問い合わせ内容<span class="required">*</span></label>
+                            <select id="inquiry" name="inquiry" required>
+                                <option value="" disabled selected>選択してください</option>
+                                <option value="ai">AI×業務自動化ソリューションについて</option>
+                                <option value="wedding">ウェディング＆PR撮影サービスについて</option>
+                                <option value="seo">SEOライティング・運用支援について</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">メッセージ<span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group form-privacy">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">個人情報保護方針に同意する<span class="required">*</span></label>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary shine-effect">送信する</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="images/mirage-logo-white-refined.svg" alt="Mirage Design Logo" class="logo-img">
+                    </a>
+                    <p class="footer-tagline">蜃気楼のように境界を超える次世代デザインの創造</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-section">
+                        <h3 class="footer-links-title">サイトマップ</h3>
+                        <ul class="footer-links-list">
+                            <li><a href="#about">会社概要</a></li>
+                            <li><a href="#services">サービス</a></li>
+                            <li><a href="#contact">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-section">
+                        <h3 class="footer-links-title">サービス</h3>
+                        <ul class="footer-links-list">
+                            <li><a href="#services">AI×業務自動化ソリューション</a></li>
+                            <li><a href="#services">ウェディング＆PR撮影サービス</a></li>
+                            <li><a href="#services">SEOライティング・運用支援</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-section">
+                        <h3 class="footer-links-title">お問い合わせ</h3>
+                        <ul class="footer-links-list">
+                            <li><i class="fas fa-map-marker-alt"></i> 〒381-0051 長野県長野市若槻団地4番地43</li>
+                            <li><i class="fas fa-phone-alt"></i> 070-4386-5248</li>
+                            <li><i class="fas fa-envelope"></i> h.karasawa@miragidesign.jp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2025 株式会社Mirage Design All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link shine-effect"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link shine-effect"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link shine-effect"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link shine-effect"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- サービス詳細用のモーダルコンテンツ -->
+    <div id="service1-modal-content" style="display: none;">
+        <div class="modal-header">
+            <h3 class="modal-title">AI×業務自動化ソリューション</h3>
+        </div>
+        <div class="modal-body">
+            <p>AI技術を活用した業務自動化ソリューションで、企業の生産性と効率性を飛躍的に向上させます。</p>
+            <h4>主なサービス内容</h4>
+            <ul>
+                <li>業務プロセスの分析と自動化設計</li>
+                <li>AIを活用したデータ分析と予測モデル構築</li>
+                <li>チャットボットや音声アシスタントの開発</li>
+                <li>RPA（ロボティック・プロセス・オートメーション）導入支援</li>
+                <li>カスタムAIソリューションの開発</li>
+            </ul>
+            <p>お客様の業種や業務内容に合わせた最適なソリューションをご提案いたします。</p>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-btn modal-btn-primary" onclick="closeModal('service1-modal')">閉じる</button>
+        </div>
+    </div>
+
+    <div id="service2-modal-content" style="display: none;">
+        <div class="modal-header">
+            <h3 class="modal-title">ウェディング＆PR撮影サービス</h3>
+        </div>
+        <div class="modal-body">
+            <p>プロフェッショナルなカメラマンによる高品質な撮影サービスで、特別な瞬間や企業のブランド価値を美しく表現します。</p>
+            <h4>主なサービス内容</h4>
+            <ul>
+                <li>結婚式・前撮り写真撮影</li>
+                <li>企業プロフィール・製品写真撮影</li>
+                <li>イベント・セミナー撮影</li>
+                <li>ポートレート・プロフィール写真</li>
+                <li>映像制作・動画編集</li>
+            </ul>
+            <p>撮影から編集、納品までワンストップで対応いたします。お客様のご要望に合わせた撮影プランをご用意しております。</p>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-btn modal-btn-primary" onclick="closeModal('service2-modal')">閉じる</button>
+        </div>
+    </div>
+
+    <div id="service3-modal-content" style="display: none;">
+        <div class="modal-header">
+            <h3 class="modal-title">SEOライティング・運用支援</h3>
+        </div>
+        <div class="modal-body">
+            <p>検索エンジン最適化（SEO）を考慮したコンテンツ制作と継続的な運用支援で、Webサイトの集客力を高めます。</p>
+            <h4>主なサービス内容</h4>
+            <ul>
+                <li>SEO対策コンテンツ制作</li>
+                <li>ブログ・記事の定期執筆代行</li>
+                <li>Webサイト分析とSEO改善提案</li>
+                <li>キーワード戦略立案</li>
+                <li>SNS運用サポート</li>
+            </ul>
+            <p>専門知識を持ったライターが、お客様のビジネスや商品・サービスの魅力を引き出すコンテンツを制作いたします。</p>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-btn modal-btn-primary" onclick="closeModal('service3-modal')">閉じる</button>
+        </div>
+    </div>
+
+    <!-- お問い合わせフォーム用モーダル -->
+    <div id="contact-modal-content" style="display: none;">
+        <div class="modal-header">
+            <h3 class="modal-title">お問い合わせ</h3>
+        </div>
+        <div class="modal-body">
+            <div class="modal-form-group">
+                <label for="modal-name" class="modal-label">お名前</label>
+                <input type="text" id="modal-name" class="modal-input" required>
+            </div>
+            <div class="modal-form-group">
+                <label for="modal-email" class="modal-label">メールアドレス</label>
+                <input type="email" id="modal-email" class="modal-input" required>
+            </div>
+            <div class="modal-form-group">
+                <label for="modal-subject" class="modal-label">件名</label>
+                <input type="text" id="modal-subject" class="modal-input" required>
+            </div>
+            <div class="modal-form-group">
+                <label for="modal-message" class="modal-label">メッセージ</label>
+                <textarea id="modal-message" class="modal-textarea" required></textarea>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-btn modal-btn-secondary" onclick="closeModal('contact-modal')">キャンセル</button>
+            <button class="modal-btn modal-btn-primary" id="modal-submit">送信する</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html> 

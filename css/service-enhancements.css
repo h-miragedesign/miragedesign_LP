@@ -1,0 +1,106 @@
+/* サービスカードエンハンスメント */
+.service-card {
+  border: none;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 60px 40px;
+}
+
+.service-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 0;
+  background: var(--gradient-primary);
+  transition: height 0.6s ease;
+  z-index: -1;
+}
+
+.service-card:hover::after {
+  height: 100%;
+}
+
+.service-icon {
+  position: relative;
+  margin-bottom: 35px;
+  background: transparent;
+}
+
+.service-icon::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.1;
+  transform: scale(0.8);
+  transition: all 0.4s ease;
+}
+
+.service-card:hover .service-icon::before {
+  transform: scale(1.2);
+  opacity: 0.2;
+}
+
+.service-title {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.service-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background: var(--gradient-primary);
+  transition: width 0.4s ease;
+}
+
+.service-card:hover .service-title::after {
+  width: 60px;
+}
+
+/* 特殊効果 - サービスごとのテーマカラー */
+.service-card:nth-child(1) {
+  border-top: 4px solid var(--primary-color);
+}
+
+.service-card:nth-child(2) {
+  border-top: 4px solid var(--accent-color);
+}
+
+.service-card:nth-child(3) {
+  border-top: 4px solid var(--secondary-color);
+}
+
+/* アイコン特殊効果 */
+.service-card:nth-child(1) .service-icon i {
+  text-shadow: 0 0 20px rgba(106, 17, 203, 0.3);
+}
+
+.service-card:nth-child(2) .service-icon i {
+  text-shadow: 0 0 20px rgba(196, 113, 237, 0.3);
+}
+
+.service-card:nth-child(3) .service-icon i {
+  text-shadow: 0 0 20px rgba(37, 117, 252, 0.3);
+}
+
+/* レスポンシブデザイン対応 */
+@media (max-width: 768px) {
+  .service-card {
+    padding: 50px 30px;
+  }
+} 

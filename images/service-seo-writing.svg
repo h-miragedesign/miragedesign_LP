@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a11cb" />
+      <stop offset="100%" stop-color="#2575fc" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.2" />
+    </filter>
+  </defs>
+  <g fill="none" stroke="url(#gradient)" stroke-width="3" filter="url(#shadow)">
+    <!-- ドキュメント形状 -->
+    <rect x="24" y="15" width="55" height="75" rx="4" ry="4" stroke-width="2.5" />
+    <line x1="34" y1="35" x2="69" y2="35" stroke-width="2.5" />
+    <line x1="34" y1="45" x2="69" y2="45" stroke-width="2.5" />
+    <line x1="34" y1="55" x2="69" y2="55" stroke-width="2.5" />
+    <line x1="34" y1="65" x2="69" y2="65" stroke-width="2.5" />
+    <line x1="34" y1="75" x2="55" y2="75" stroke-width="2.5" />
+    
+    <!-- 虫眼鏡 -->
+    <circle cx="75" cy="85" r="15" stroke-width="2.5" />
+    <line x1="86" y1="96" x2="96" y2="106" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- SEOを象徴する矢印 -->
+    <path d="M65,30 L75,20 L85,30" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="75" y1="20" x2="75" y2="40" stroke-width="2.5" stroke-linecap="round" />
+    
+    <!-- グラフ要素 -->
+    <path d="M90,55 L90,75 L94,75 L94,55 Z" fill="url(#gradient)" stroke="none" />
+    <path d="M96,60 L96,75 L100,75 L100,60 Z" fill="url(#gradient)" stroke="none" />
+    <path d="M102,50 L102,75 L106,75 L106,50 Z" fill="url(#gradient)" stroke="none" />
+  </g>
+</svg> 
