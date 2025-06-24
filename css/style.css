@@ -199,8 +199,13 @@ img {
 }
 
 .logo-img {
-  height: 45px;
-  width: auto;
+  max-width: 180px;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .logo-img {
+  max-width: 180px;
 }
 
 .nav-list {
@@ -1186,15 +1191,15 @@ img {
 }
 
 .footer-logo img {
-  max-width: 220px;
-  margin-bottom: 15px;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+  max-width: 160px;
+  height: auto;
+  opacity: 0.9;
   transition: all 0.3s ease;
 }
 
 .footer-logo img:hover {
-  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
-  transform: translateY(-3px);
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 .footer-tagline {
